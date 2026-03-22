@@ -95,6 +95,6 @@ while True:
 
 print(f"Race finished after {hour} hours!\n")
 print(f"{'Reg':<10} {'Max speed':>10} {'Speed':>8} {'Distance':>12}")
-print("-" * 44)
+
 for car in cars:
-    print(f"{car.registration_number:<10} {car.max_speed:>7} km/h {car.speed:>5} km/h {car.distance:>9.1f} km")
+ print(f"{car.registration_number:<10} {car.max_speed:>7} km/h {car.speed:>5} km/h {car.distance:>9.1f} km")
