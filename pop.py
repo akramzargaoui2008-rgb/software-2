@@ -66,8 +66,9 @@ class Race:
             car.drive(1)
 
     def print_status(self):
+        print(f"{'Car':<25} {'Speed (km/h)':<15} {'Distance driven (km)':<20}")
         for car in self.cars:
-            print(f"{car} speed: {car.speed} km/h, distance driven: {car.distance_driven} km")
+            print(f"{str(car):<25} {car.speed:<15} {car.distance_driven:<20}")
 
     def race_finished(self):
         for car in self.cars:
@@ -116,4 +117,3 @@ while not race.race_finished():
 
 print(f"Race finished after {hours} hours!")
 race.print_status()
-
